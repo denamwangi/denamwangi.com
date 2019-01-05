@@ -19,13 +19,14 @@
 }
 
 .intro {
-  min-height: 500px;
+  min-height: 800px;
   background-color: #282c34;
   background-image: url('https://image.freepik.com/free-vector/abstract-blurred-gradient-mesh-background_1159-3170.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   color: white;
     background-size: cover;
@@ -35,21 +36,34 @@
   margin-left: 150px;
   margin-top: 50px;
 }
+
 .intro p {
     font-size: 1.5em;
     font-family: 'Julius Sans One', sans-serif;
+    color: white;
   }
 
 h2 {
-  font-size: 3.8em;
+  font-size: 3.5em;
+}
+
+section {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
 }
 
 hr {
   margin: 0 auto 50px auto;
-  max-width: 400px;
+  min-width: 500px;
+  border-top: 1px solid;
+
 }
 
-.body-darker hr {
+hr .body-darker {
+
   border-color: 'dark-grey';
 
 }
@@ -70,7 +84,36 @@ ul li {
   display: inline;
 }
 
+
 .nav-item {
   margin: 10px;
 }
 
+.pagepanel.black {
+  background: black;
+  color: white;
+}
+
+.pagepanel.black p {
+  color: #C0C0C0;
+  
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  font-size: 6.5em;
+  color: #5b5b5b;
+}
+
+.logos li {
+  margin: 30px;
+}
+
+.logos a {
+  color: inherit;
+}
+.pagepanel.white {
+  background: white;
+  color: black;
+}
