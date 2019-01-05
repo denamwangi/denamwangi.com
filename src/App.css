@@ -2,31 +2,75 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+  min-height: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
+  font-size: calc(18px);
+  color: black;
+
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro {
+  min-height: 500px;
+  background-color: #282c34;
+  background-image: url('https://image.freepik.com/free-vector/abstract-blurred-gradient-mesh-background_1159-3170.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+    background-size: cover;
 }
+
+.intro-text {
+  margin-left: 150px;
+  margin-top: 50px;
+}
+.intro p {
+    font-size: 1.5em;
+    font-family: 'Julius Sans One', sans-serif;
+  }
+
+h2 {
+  font-size: 3.8em;
+}
+
+hr {
+  margin: 0 auto 50px auto;
+  max-width: 400px;
+}
+
+.body-darker hr {
+  border-color: 'dark-grey';
+
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 180px 0 180px;
+  color: #5b5b5b;
+  line-height: 1.6;
+  font-size: 1.2em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline;
+}
+
+.nav-item {
+  margin: 10px;
+}
+
