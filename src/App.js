@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import logo from './logo.svg';
 
 import './App.css';
 
 library.add(fab, faEnvelope)
 
 class App extends Component {
-  scrollToTop = () => {
-    scroll.scrollToTop();
-  };
 
   render() {
     return (
