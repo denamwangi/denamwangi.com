@@ -192,7 +192,7 @@ class App extends Component {
           </h4>
             <ul>
               <li>
-                Model Expand: 
+                Model Expand: Career Advice for Software Engineers
               </li>
               <li>
                 Hackbright Academy: How I got my job 
@@ -210,22 +210,22 @@ class App extends Component {
           <div className="logos">
             <ul>
               <li>
-                <a href="https://twitter.com/denamwangi" target="_blank">
+                <a href="https://twitter.com/denamwangi" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={['fab', 'twitter']} />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/denamwangi" target="_blank">
+                <a href="https://github.com/denamwangi" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={['fab', 'github']} />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/dena-metili-mwangi/" target="_blank">
+                <a href="https://www.linkedin.com/in/dena-metili-mwangi/" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={['fab', 'linkedin']} />
                 </a>
               </li>
               <li>
-                <a href="mailto:dena.mwangi@gmail.com" target="_blank">
+                <a href="mailto:dena.mwangi@gmail.com" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon="envelope" />
                 </a>
               </li>
