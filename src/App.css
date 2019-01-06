@@ -13,13 +13,18 @@
   color: black;
 
 }
+header {
+  position: fixed;
+  background: white;
+  width: 100%;
+}
 
 .App-link {
   color: #61dafb;
 }
 
 .intro {
-  min-height: 800px;
+  min-height: 900px;
   background-color: #282c34;
   background-image: url('https://image.freepik.com/free-vector/abstract-blurred-gradient-mesh-background_1159-3170.jpg');
   background-repeat: no-repeat;
@@ -53,6 +58,7 @@ section {
   align-items: center;
   flex-direction: column;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 hr {
@@ -76,14 +82,18 @@ p {
   font-size: 1.2em;
 }
 
-ul {
+ul li {
   list-style-type: none;
+  line-height: 30px;
 }
 
-ul li {
+.logos ul li {
   display: inline;
 }
 
+.App-header ul li {
+  display: inline;
+}
 
 .nav-item {
   margin: 10px;
@@ -116,4 +126,29 @@ ul li {
 .pagepanel.white {
   background: white;
   color: black;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.details p {
+  font-size: 1.1em;
+  padding: 0 10px 0 10px;
+}
+.detail-card {
+  min-height: 400px;
+  min-width: 400px;
+}
+
+#education .details {
+  flex-direction: column;
+}
+#education .details .detail-card {
+  min-height: 100px;
+  min-width: 400px;
+}
+#about p {
+  max-width: 1100px;
 }

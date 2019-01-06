@@ -11,6 +11,10 @@ import './App.css';
 library.add(fab, faEnvelope)
 
 class App extends Component {
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   render() {
     return (
       <div className="App">
@@ -22,7 +26,7 @@ class App extends Component {
               to="about"
               spy={true}
               smooth={true}
-              offset={70}
+              offset={-80}
               duration= {500}
             > 
               About 
@@ -34,7 +38,7 @@ class App extends Component {
               to="experience"
               spy={true}
               smooth={true}
-              offset={70}
+              offset={-80}
               duration= {500}
             > 
               Experience 
@@ -46,7 +50,7 @@ class App extends Component {
               to="education"
               spy={true}
               smooth={true}
-              offset={70}
+              offset={-80}
               duration= {500}
             > 
               Education
@@ -58,7 +62,7 @@ class App extends Component {
               to="talks"
               spy={true}
               smooth={true}
-              offset={70}
+              offset={-80}
               duration= {500}
             > 
               Talks
@@ -67,10 +71,10 @@ class App extends Component {
           <li className="nav-item">
             <Link
               activeClass="active"
-              to="talks"
+              to="contact"
               spy={true}
               smooth={true}
-              offset={70}
+              offset={-80}
               duration= {500}
             > 
               Contact
@@ -92,51 +96,111 @@ class App extends Component {
         <section className="pagepanel white" id="about">
           <h2 >About</h2>
           <hr className="body-darker"/>
-          <p>
-            I graduated from Duke University with a M.A. in Economics focused on international development. I've spent the last 
-            few years working as a Data Analyst for various think tanks in Washington D.C. where my passion for breathing life into 
-            data and telling the hidden stories underneath bloomed. Constantly in search of technology to do this better, I started 
-            learning Python. I chose to bolster my analytical skills by pursuing a Software Engineering Fellowship at Hackbright 
-            Academy where I learned computer science fundamentals and web development. I'm intrigued by data-related problems in 
-            tech and excited to use my growing skill set to develop innovative ways to solve them
+          <p className="about-details">
+            I am a former research analyst now working as a full stack software engineer on the growth team at Sentry, 
+            an open source error monitoring tool. I have a passion for analytics and data in general as a tool to help us 
+            get a sense of the world. I like building things that promote what's typically unseen, using tech for good and 
+            generally advocating for equity.
           </p>
         </section>
 
         <section id="experience" className="pagepanel black">
           <h2 >Experience</h2>
           <hr className="body-darker"/>
-          <p>
-            I graduated from Duke University with a M.A. in Economics focused on international development. I've spent the last 
-            few years working as a Data Analyst for various think tanks in Washington D.C. where my passion for breathing life into 
-            data and telling the hidden stories underneath bloomed. Constantly in search of technology to do this better, I started 
-            learning Python. I chose to bolster my analytical skills by pursuing a Software Engineering Fellowship at Hackbright 
-            Academy where I learned computer science fundamentals and web development. I'm intrigued by data-related problems in 
-            tech and excited to use my growing skill set to develop innovative ways to solve them
-          </p>
+            <div className="details">
+              <div className="detail-card">
+                <h4>Sentry</h4>
+                <p className="detail-card-title">Software Engineer</p>
+                <p>
+                  (2017 - Date)
+                </p>
+                <p>
+                  Data-minded software engineer (Python/React) focused on growth initiatives from onboarding and activation
+                  through retention and expansion. Championed and helped implement A/B testing using open source tooling.
+                  Participated heavily with interviewing/recruitment efforts.
+                </p>
+              </div>
+              <div className="detail-card">                
+                <h4>World Bank</h4>
+                <p className="detail-card-title">
+                  Field Experiments Research Analyst
+                </p>
+                <p>
+                  (2016 - 2017)
+                </p>
+                <p>
+                  Programmed electronic household and market price surveys using ODK based Survey CTO. Managed multiple streams 
+                  of country wide data collection and created systems for real time data quality checks including a python 
+                  based dashboard.
+                </p>
+              </div>
+              <div className="detail-card">
+                <h4>IFPRI</h4>               
+                <p className="detail-card-title">
+                   Research Analyst
+                </p>
+                <p>
+                  (2013 - 2016)
+                </p>
+                <p>
+                  Cleaned and analyzed multiple rounds of primary data from a health behavior impact evaluation. Designed and 
+                  implemented a rigorous data management system. Collaborated with co-investigators to prepare country reports, 
+                  stakeholder presentations and research publications
+                </p>
+              </div>
+              
+            </div>
         </section>
 
         <section id="education" className="pagepanel white">
           <h2 >Education</h2>
           <hr className="body-darker"/>
-          <p>
-            I graduated from Duke University with a M.A. in Economics focused on international development. I've spent the last 
-            few years working as a Data Analyst for various think tanks in Washington D.C. where my passion for breathing life into 
-            data and telling the hidden stories underneath bloomed. Constantly in search of technology to do this better, I started 
-            learning Python. I chose to bolster my analytical skills by pursuing a Software Engineering Fellowship at Hackbright 
-            Academy where I learned computer science fundamentals and web development. I'm intrigued by data-related problems in 
-            tech and excited to use my growing skill set to develop innovative ways to solve them
-          </p>
+          <div className="details">
+            <div className="detail-card">
+              <h4>Duke University</h4>
+              Masters in Economics
+            </div>
+            
+            <div className="detail-card">
+              <h4>Hackbright Academy</h4>
+              Software Engineering Certificate
+            </div>
+
+            <div className="detail-card">
+              <h4>Reforge</h4>
+              3 Month course
+            </div>
+            
+          </div>
+
         </section>
 
         <section id="talks" className="pagepanel black">
           <h2 >Talks/Panels</h2>
           <hr className="body-darker"/>
-          <p>
-            List of Upcoming Talks goes here
-          </p>
-          <p>
-            Previous panels
-          </p>
+          <h4>Upcoming Talks</h4>
+          <ul>
+            <li>
+              Jan 26th: Tech Intersections: Getting Started with A/B Testing on the Cheap using Open Source 
+            </li>
+            <li>
+              Feb 7th: Code in Color: Tips on surviving being "the only"
+            </li>
+          </ul>
+          <h4>
+            Previous Panels
+          </h4>
+            <ul>
+              <li>
+                Model Expand: 
+              </li>
+              <li>
+                Hackbright Academy: How I got my job 
+              </li>
+              <li>
+                Sentry Scouts: Spooky bugs in prod
+              </li>
+            </ul>
         </section>
 
         <section id="contact" className="pagepanel white">
