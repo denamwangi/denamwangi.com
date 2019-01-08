@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from "react-scroll";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import Header from './components/header';
 
 import './App.css';
 
@@ -14,71 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-        <ul>
-          <li className="nav-item">
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration= {500}
-            > 
-              About 
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              activeClass="active"
-              to="experience"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration= {500}
-            > 
-              Experience 
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              activeClass="active"
-              to="education"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration= {500}
-            > 
-              Education
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              activeClass="active"
-              to="talks"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration= {500}
-            > 
-              Talks
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration= {500}
-            > 
-              Contact
-            </Link>
-          </li>
-        </ul>
-
-        </header>
+        <Header />
         <div className="intro">
           <div className="intro-text">
             <h2 >
@@ -93,10 +29,10 @@ class App extends Component {
           <h2 >About</h2>
           <hr className="body-darker"/>
           <p className="about-details">
-            I am a former research analyst now working as a full stack software engineer on the growth team at Sentry, 
-            an open source error monitoring tool. I have a passion for analytics and data in general as a tool to help us 
-            get a sense of the world. I like building things that promote what's typically unseen, using tech for good and 
-            generally advocating for equity.
+            Dena is a full stack software engineer on the growth team at Sentry, 
+            an open source error monitoring tool. She has a passion for analytics and data as a tool to help us 
+            get a sense of the world around us. She loves building things that illuminate what's typically unseen, 
+            using tech for good and generally advocating for equity.
           </p>
         </section>
 
