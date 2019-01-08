@@ -10,9 +10,9 @@ class Header extends Component {
 	  <header className="App-header">
 	    <ul>
 		  {sections.map(section => (
-		    <li className="nav-item">
-							<HeaderLink name={section}/>
-						</li>
+			<li className="nav-item">
+				<HeaderLink name={section}/>
+			</li>
 		  ))}
 	    </ul>
 	  </header>
